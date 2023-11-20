@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #show-card{
+    position: absolute;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, orange, white, green);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    bottom: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 5;
+  }
+  
+  .card{
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(145deg, orange, white, green);
+    border: 2px solid black;
+    transition: all 0.5s ease;
+    /* transition: transform 0.5s ease; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+
+    animation-name: card-appear;
+    animation-duration: 1s;
+  }
+
+  #greet-card{
+    position: relative;
+  }
+
+  @keyframes card-appear {
+    from{
+        opacity: 0;
+        top: -100px;
+    }
+    to{
+        opacity: 1;
+        top: 0px;
+    }
+  }
+
+
+  /* for the safari */
+  @-webkit-keyframes card-appear{
+    from{
+        opacity: 0;
+        top: -500px;
+    }
+    to{
+        opacity: 1;
+        top: 0px;
+    }
+  }
+  
+  .greet{
+    font-weight: 300;
+  }
+
+  .cancel-btn{
+    height: 15px;
+    width: 15px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .cancel-btn:hover{
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+  }
+
+  .cancel-icon{
+    font-size: 10px;
+    color: black;
+  }
+  
