@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.card {
+    background-color: aqua;
+    // transition: backgroundColor 0.5s ease-in-out;
+    /* Other styles for the card */
+}
+
+.card:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.card-2{
+    // animation: transform-into-card 1s forwards;
+    position: absolute;
+    top: 23px;
+}
+
+// @keyframes transform-into-card {
+//     from{
+//         @include card-show-btn();
+//         height: 100px;
+//         width: 100px;
+//     }
+//     to{
+//         height: 400px;
+//         width: 300px;
+//         border-radius: 10px;
+//     }
+// }
